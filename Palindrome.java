@@ -6,7 +6,8 @@ class Cal {
     public int reverse(int n) {
         int rev = 0;
         while (n > 0) {
-            rev = rev * 10 + (n % 10);// take first last number and multiply with 10
+            rev = rev * 10 + (n % 10);
+            // take first last number and multiply with 10
             n /= 10;
         }
         return rev;

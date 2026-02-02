@@ -1,4 +1,3 @@
-package JAVA_code;
 import java.util.*;
 class isEven{
     public void evenOrOdd(int n){

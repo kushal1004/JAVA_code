@@ -1,4 +1,3 @@
-package JAVA_code;
 import java.util.*;
 public class Main{
     static boolean isPrime(int n){

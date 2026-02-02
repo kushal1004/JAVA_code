@@ -1,4 +1,3 @@
-package JAVA_code;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Exp {

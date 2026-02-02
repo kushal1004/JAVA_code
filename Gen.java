@@ -1,4 +1,3 @@
-package JAVA_code;
 import java.util.*;
 class students{
     int roll;
@@ -57,4 +56,3 @@ public class Gen {
        
     }
 }
-

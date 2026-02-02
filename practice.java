@@ -1,6 +1,5 @@
-package JAVA_code;
 import java.util.Scanner;
-import java.util.Arrays;
+import  java.util.Arrays;
 
 public class practice {
         public static int gcd(int a, int b) {

@@ -10,15 +10,17 @@ class Demo {
         System.out.println("This is default constructor");
     }
 
-    private static int x ;
+    private static int x;
 
-    void f1(){
+    void f1() {
         x = 22;
     }
-    void f2(){
+
+    void f2() {
         System.out.println(x);
     }
-    void f3(){
+
+    void f3() {
         x = 45;
     }
 }
@@ -33,8 +35,8 @@ public class example {
         obj1.add(5, 6);
         obj.Multiplication(5, 6);
 
-       obj2.f1();
-       obj3.f3();
-       obj2.f2();
+        obj2.f1();
+        obj3.f3();
+        obj2.f2();
     }
 }

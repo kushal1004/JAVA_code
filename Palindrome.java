@@ -6,7 +6,6 @@ class Cal {
         int rev = 0;
         while (n > 0) {
             rev = rev * 10 + (n % 10);
-            // take first last number and multiply with 10
             n /= 10;
         }
         return rev;
@@ -17,6 +16,43 @@ class Cal {
             System.out.println("The number " + n + " is Palindrome");
         } else {
             System.out.println("This number is not Palindrome number");
+        }
+    }
+
+    public boolean isPrime(int n){
+        if(n<=1){
+            return false;
+        }
+        for(int i=2;i*i <=n;i++){
+            if(n%i==0) return false;
+        }    return true;
+            
+    }
+
+    public void repeatNumber(int[] arr){
+        for(int i=0;i<arr.length;i++){
+
+            boolean alreadyPrint = false;
+            for(int j=0;j<i;j++){
+                if(arr[i]==arr[j]){
+                    alreadyPrint = true;
+                    break;
+                }
+            }
+
+            if(alreadyPrint){
+                continue;
+            }
+            int count = 1;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                }
+            }
+
+            if(count>1){
+                System.out.println(arr[i]+" : "+count);
+            }
         }
     }
 }
@@ -39,6 +75,9 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
+        int arr[] = {2,3,4,5,7,2,3,7,2,3};
+        Cal obj = new Cal();
+        obj.repeatNumber(arr);
         Scanner sc = new Scanner(System.in);
         // System.out.print("Enter valid number: ");
         // int num = sc.nextInt();

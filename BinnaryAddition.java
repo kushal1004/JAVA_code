@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class BinnaryAddition {
+    // public static void performAddition(String str1, String str2) {
+    // int a = Integer.valueOf(str1, 2);
+    // int b = Integer.valueOf(str2, 2);
+    // int sum = a + b;
+    // String result = Integer.toBinaryString(sum);
+    // System.out.println("The sum of " + str1 + " and " + str2 + " is: " + result);
+    // }
+
     public static void performAddition(String str1, String str2) {
         int a = Integer.valueOf(str1, 2);
         int b = Integer.valueOf(str2, 2);

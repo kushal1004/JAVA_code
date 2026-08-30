@@ -1,26 +1,25 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class Exp {
-    public static void main(String[] str){
+    public static void main(String[] str) {
         Scanner sc = new Scanner(System.in);
-        try{
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            int r = a/b;
-            System.out.println(r);
-        }// catch(Exception e) can not use this one bcz if i use here then rest of the catch block will be unreachable so it is better to use Exception at last
-        catch(InputMismatchException e){
-            System.out.println(e.getClass().getName()+":"+e.getMessage());
-        }catch(ArithmeticException e){
-            System.out.println(e.getClass().getName()+":"+e.getMessage());
+        // int[] arr = new int[4];
+        int n = sc.nextInt();
+        boolean isPrime = true;
+        for (int i = 2; i < n / 2; i++) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
         }
-        catch(Exception e){
-            System.out.println(e.getClass().getName());
-            System.out.println(e.getMessage());
+
+        if (isPrime) {
+            System.out.println("prime");
+        } else {
+            System.out.println("not prime");
         }
-        finally{
-            sc.close();
-            System.out.println("From finally block");
-        }
+
+        sc.close();
+
     }
 }
